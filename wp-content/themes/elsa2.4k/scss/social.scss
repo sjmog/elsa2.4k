@@ -4,54 +4,41 @@
 
 .row.social.fullWidth {
 	max-width: none;
-
-}
-
-.bobble {
-	display: block;
-	margin:0 auto;
-	height:100px;
-	width:100px;
-	border-radius:9999px;
-	border:2px solid white;
-	opacity:0.6;
-	position:absolute;
-	left:50%;
-	margin-left:-50px;
-	top:-150px;
-	background-position: center;
-	background-repeat:no-repeat;
-	&:after {
-		content: " ";
-		height:52px;
-		width:2px;
-		display:block;
-		position:absolute;
-		background-color:white;
-		top:100%;
-		left:50%;
-		margin-left:-1px;
-	}
-	&:hover {
-		opacity:1;
-	}
-}
-
-.streamHolder {
-	border:3px solid white;
-	&#facebookStreamHolder {
-		border-right:1px solid white;
-		border-left:none;
-		background-color:$fbBlue;
-		padding-right:none;
-	}
-	&#twitterStreamHolder {
-		border-left:2px solid white;
-		background-color:$twitterBlue;
-		padding-left:none;
-		border-right:none;
+	color:white(0.9);
+	font-family: $font3;
+	display:table;
+	background-color:$fbBlue;
+	.streamHolder {
+		display:table-cell;
+		border:3px solid white;
+		
+		
+		&#facebookStreamHolder {
+			border-right:1px solid white;
+			border-left:none;
+			border-bottom:none;
+			background-color:$fbBlue;
+			padding-right:none;
+			@media screen and (max-width: 768px) {
+				border-right:none;
+			}
+		}
+		&#twitterStreamHolder {
+			border-left:2px solid white;
+			background-color:$twitterBlue;
+			padding-left:none;
+			border-right:none;
+			border-bottom:none;
+			@media screen and (max-width: 768px) {
+				border-left:none;
+			}
+		}
 	}
 }
+
+
+
+
 
 //facebook
 
@@ -62,10 +49,224 @@
 	background-position: 35% 100%;
 }
 
+.theFbPost.postFormat {
+	max-width:580px !important;
+	&:first-of-type {
+		margin-top:30px !important;
+	}
+	@media screen and (max-width: 768px) {
+		&:last-of-type {
+			margin-bottom:180px !important;
+		}
+	}
+	& .fbPostWrap {
+		background-color:$fbBlueLight;
+		padding:16px;
+		& .preContent {
+			& .userNameWrap {
+				text-align:left;
+			}
+			& .timeWrap {
+				text-align:right;
+				color:white(0.6);
+				p {
+					font-weight:200;
+				}
+			}
+		}
+		& .content {
+			margin-top:10px;
+			margin-bottom:10px;
+
+			& .fbPostTextWrap {
+				& p {
+					line-height:1.4em;
+				}
+			}
+
+		}
+		& .postContent {
+			& * {
+				color:white(0.5);
+				line-height:1.2em;
+			}
+			& i {
+				margin:0px 5px;
+			}
+			& .commentsWrap {
+			
+			}
+			& .likeWrap {
+				text-align:right;
+			}
+		}
+		//change this round for the alternate direction
+		&:after {
+			content: " ";
+			height:2px;
+			width:52px;
+			display:block;
+			position:absolute;
+			background-color:$fbBlueLight;
+			top:50%;
+			left:100%;
+			margin-top:-1px;
+		}
+		@media screen and (max-width: 768px) {
+			&:after {
+				height:52px;
+				width:2px;
+				top:100%;
+				left:50%;
+				margin-bottom:-52px;
+				margin-left:-1px;
+			}
+		}
+	}
+	& .authorColumn {
+		img {
+			border:2px solid $fbBlueLight;
+		}
+	}
+	&.alternate .fbPostWrap {
+		&:after {
+			content: " ";
+			height:2px;
+			width:52px;
+			display:block;
+			position:absolute;
+			background-color:$fbBlueLight;
+			top:50%;
+			left:0;
+			margin-left:-52px;
+			z-index:0;
+			margin-top:-1px;
+		}
+		@media screen and (max-width: 768px) {
+			&:after {
+				height:52px;
+				width:2px;
+				top:0%;
+				left:50%;
+				margin-top:-52px;
+				margin-left:-1px;
+			}
+		}
+	}
+}
+
 //twitter
 
 .twitterBobble {
 	background-color:$twitterBlue;
 	background-size:80% auto;
 	background-image:url("../img/logos/twitter.png");
+}
+
+.theTweet.postFormat {
+	max-width:580px !important;
+	&:first-of-type {
+		margin-top:30px !important;
+	}
+	@media screen and (max-width: 768px) {
+		&:last-of-type {
+			margin-bottom:90px !important;
+		}
+	}
+	& .tweetWrap {
+		background-color:$twitterBlueLight;
+		padding:16px;
+		& .preContent {
+			& .userNameWrap {
+				text-align:left;
+			}
+			& .timeWrap {
+				text-align:right;
+				color:white(0.6);
+				p {
+					font-weight:200;
+				}
+			}
+		}
+		& .content {
+			margin-top:10px;
+			margin-bottom:10px;
+
+			& .tweetTextWrap {
+				& p {
+					line-height:1.4em;
+					color:white(0.9);
+					font-weight: 200;
+				}
+			}
+
+		}
+		& .tweetContent {
+			& * {
+				color:white(0.5);
+				line-height:1.2em;
+			}
+			& i {
+				margin:0px 5px;
+			}
+			& .replyWrap {
+			
+			}
+			& .retweetWrap {
+				text-align:right;
+			}
+		}
+		//change this round for the alternate direction
+		&:after {
+			content: " ";
+			height:2px;
+			width:52px;
+			display:block;
+			position:absolute;
+			background-color:$twitterBlueLight;
+			top:50%;
+			left:100%;
+			margin-top:-1px;
+		}
+		@media screen and (max-width: 768px) {
+			&:after {
+				height:52px;
+				width:2px;
+				top:100%;
+				left:50%;
+				margin-bottom:-52px;
+				margin-left:-1px;
+			}
+		}
+	}
+	& .authorColumn {
+		img {
+			border:2px solid $twitterBlueLight;
+		}
+	}
+	&.alternate .tweetWrap {
+		&:after {
+			content: " ";
+			height:2px;
+			width:52px;
+			display:block;
+			position:absolute;
+			background-color:$twitterBlueLight;
+			top:50%;
+			left:0;
+			margin-left:-52px;
+			z-index:0;
+			margin-top:-1px;
+		}
+		@media screen and (max-width: 768px) {
+			&:after {
+				height:52px;
+				width:2px;
+				top:0%;
+				left:50%;
+				margin-top:-52px;
+				margin-left:-1px;
+			}
+		}
+	}
 }

@@ -1,5 +1,9 @@
 
-<div id="post-<?php echo $postCount;?>" class="row theFbPost postFormat">
+<div id="post-<?php echo $postCount;?>" class="row theFbPost postFormat alternate">
+	
+	<div class="authorColumn small-4 small-centered large-uncentered columns">
+		<img src="http://s3.amazonaws.com/rapgenius/filepicker%2FvCleswcKTpuRXKptjOPo_kitten.jpg">
+	</div>
 	<div id="post-<?php echo $postCount;?>Content" class="small-12 large-8 columns fbPostWrap contentColumn">
 		<!--post content-->
 		<div class="row preContent">
@@ -43,9 +47,6 @@
 				<i class="icon-thumbs-up-alt"></i>
 			</div>
 		</div>
-	</div>
-	<div class="authorColumn small-4 small-centered large-uncentered columns">
-		<img src="http://s3.amazonaws.com/rapgenius/filepicker%2FvCleswcKTpuRXKptjOPo_kitten.jpg">
 	</div>
 </div>
 <script type="text/javascript">

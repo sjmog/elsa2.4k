@@ -24,3 +24,42 @@ $gray: rgb(215,215,215);
     text-shadow: none;
     color: transparent;
 }
+//vendored border-radiuses that were dropped in bourbon 3 (prematurely, in my opinion)
+@mixin border-radius($radius) {
+
+-moz-border-radius: $radius;
+-webkit-border-radius: $radius;
+border-radius: $radius;
+}
+//cross-browser opacity
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+//truncates text with an ellipsis
+@mixin text-truncate {
+	text-overflow: ellipsis;
+	vertical-align: top;
+	white-space: nowrap;
+	overflow: hidden;
+	display: inline-block;
+}
+//sexy clearfix
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+//functions
+
+
+@function white($opacity){
+    @return rgba(255,255,255,$opacity)
+}

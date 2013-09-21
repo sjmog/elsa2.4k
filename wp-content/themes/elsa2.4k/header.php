@@ -37,15 +37,13 @@
 	<!-- Startup Image iPhone (320x460) -->
 	<link rel="apple-touch-startup-image" href="<?php echo get_template_directory_uri(); ?>/img/devices/reverie-load.png" media="screen and (max-device-width: 320px)" />
 <?php wp_head(); ?>
+<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/jquery.js" type="text/javascript"></script>
 
 </head>
 
 <body <?php body_class(); ?>>
 
 <?php if (!is_front_page()): ?>
-	<div class="fullWidth">
-		<div class="navLine"></div>
-	</div>
 	<div class="row navRow">
 		<div class="small-12 columns navWrap">
 			<?php get_template_part('nav'); ?>

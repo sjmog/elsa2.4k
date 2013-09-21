@@ -2,9 +2,9 @@
 </section><!-- Container End -->
 
 <footer class="row fullWidth" role="contentinfo">
-	<div class="small-12 large-4 large-centered columns">
-		<a class="button social facebook"></a>
-		<a class="button social twitter"></a>
+	<div class="small-12 large-4 large-centered small-centered columns">
+		<a href="#" class="button social facebook"><i class="icon-facebook"></i></a>
+		<a href="#" class="button social twitter"><i class="icon-twitter"></i></a>
 	</div>
 </footer>
 
@@ -15,7 +15,7 @@
 		$(document).foundation();
 	})(jQuery);
 </script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/jquery.js" type="text/javascript"></script>
+
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.timeago.js" type="text/javascript"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.bigtext.js" type="text/javascript"></script>
 <script type="text/javascript">

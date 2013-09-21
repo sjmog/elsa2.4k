@@ -22,6 +22,7 @@ $posts = $postsArray["data"];
 <a href="#pageTestimonial" class="facebookBobble bobble"></a>
 <div id="facebookStream" class="stream">
 	<!--fb stream content-->
+	<?php $postCount = 0; ?>
 	<?php foreach ($posts as $post) {
 		$user = $post["from"];
 		$userName = $user["name"];
@@ -31,7 +32,12 @@ $posts = $postsArray["data"];
 		$message = array_shift($messageArr);
 		$likes = count($post["likes"]["data"]);
 		$comments = count($post["comments"]["data"]);
-		include(locate_template('facebookPost.php'));
+		if($postCount%2) {
+			include(locate_template('facebookPost.php'));
+		} else {
+			include(locate_template('facebookPost-alternate.php'));
+		}
+		$postCount++;
 	}
 	?>
 </div>

@@ -15,20 +15,26 @@ $accessTokenSecret = 'Hc8E5QD6FfIugLoWiNP47M5hrA5rWlRaMxmbWRhog';
 
 	$twitter = new TwitterOAuth($consumerKey, $consumerSecret, $accessToken, $accessTokenSecret);
 	 
-	$tweetsArray = $twitter->get('https://api.twitter.com/1.1/search/tweets.json?q=%23' . $hashtag . '&count=10');
+	$tweetsArray = $twitter->get('https://api.twitter.com/1.1/search/tweets.json?q=%23' . $hashtag . '&count=30');
 	$tweets = ($tweetsArray["statuses"]);
 ?>
 
 <a href="#pageTestimonial" class="twitterBobble bobble"></a>
 <div id="twitterStream" class="stream">
 	<!--twitter stream content-->
+	<?php $tweetCount = 0; ?>
 	<?php foreach ($tweets as $tweet) {
 		$user = $tweet["user"];
 		$userName = $user["screen_name"];
 		$userImg = $user["profile_image_url"];
 		$created = $tweet["created_at"];
 		$text = $tweet["text"];
-		include(locate_template('tweet.php'));
+		if(!($tweetCount%2)) {
+			include(locate_template('tweet.php'));
+		} else {
+			include(locate_template('tweet-alternate.php'));
+		}
+		$tweetCount++;
 	}
 	?>
 </div>

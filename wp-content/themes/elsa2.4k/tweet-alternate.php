@@ -1,4 +1,8 @@
-<div id="tweet-<?php echo $tweetCount;?>" class="row theTweet postFormat">
+<div id="tweet-<?php echo $tweetCount;?>" class="row theTweet postFormat alternate">
+
+	<div class="authorColumn small-4 small-centered large-uncentered columns">
+		<img src="<?php echo $userImg; ?>">
+	</div>
 	<div id="tweet-<?php echo $tweetCount;?>Content" class="small-12 large-8 columns tweetWrap contentColumn">
 		<!--tweet content-->
 		<div class="row preContent">
@@ -29,9 +33,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="authorColumn small-4 small-centered large-uncentered columns">
-		<img src="<?php echo $userImg; ?>">
-	</div>
+	
 </div>
 <script type="text/javascript">
 	$('#tweet-<?php echo $tweetCount;?> .authorColumn').css('height', ($('#tweet-<?php echo $tweetCount;?>Content').height() + 32));

@@ -11,6 +11,8 @@
 // Comment out this import if you are customizing you imports below
 @import "foundation";
 
+@import "bourbon/bourbon";
+
 /* Start to customize Reverie */
 
 @import "variables";
@@ -188,7 +190,7 @@ header {
 	width:100px;
 	border-radius:9999px;
 	border:1px solid white;
-	opacity:0.6;
+	@include opacity(0.6);
 	background:red;
 	position:absolute;
 	left:50%;
@@ -201,11 +203,66 @@ header {
 	height:100px;
 }
 
+.postFormat.alternate {
+	.authorColumn {
+		img {
+			@media screen and (max-width: 768px) {
+				
+			}
+		}
+	}
+}
+
 .postFormat {
 	max-width:640px !important;
-	margin:0 auto !important;
-	.content {
-
+	height:auto;
+	min-height:120px;
+	margin:0px auto 30px auto !important;
+	line-height:100%;
+	position:relative;
+	i {
+		display:inline-block;
+	}
+	p {
+		display:inline-block;
+		margin-bottom:0;
+	}
+	.preContent * {
+		font-weight:600;
+	}
+	.content * {
+		font-weight:100;
+		color:white(0.8);
+	}
+	.postContent * {
+		font-weight:400;
+		color:white(0.6);
+	}
+	.contentColumn {
+		@include clearfix();
+	}
+	.authorColumn {
+		position:relative;
+		@include clearfix();
+		@media screen and (max-width: 768px) {
+			height:auto !important;
+		}
+		img {
+			position:relative;
+			@include border-radius(99999px);
+			display:block;
+			height:100px;
+			width:100px;
+			margin:0 auto;
+			top:50%;
+			margin-top:-50px;
+			z-index:9999;
+			@media screen and (max-width: 768px) {
+				top:0;
+				margin-top:10px;
+				margin-bottom:10px;
+			}
+		}
 	}
 }
 
@@ -250,6 +307,50 @@ header {
 	}
 }
 
+a.button.social {
+	color:$gray;
+	margin-bottom:0;
+	@include transition (all 0.5s ease-in-out);
+	&.facebook:hover {
+		color:$fbBlue;
+		@include opacity(0.8);
+	}
+	&.twitter:hover {
+		color:$twitterBlue;
+		@include opacity(0.8);
+	}
+}
+
+.bobble {
+	display: block;
+	margin:0 auto;
+	height:100px;
+	width:100px;
+	border-radius:9999px;
+	border:2px solid white;
+	@include opacity(0.6);
+	position:absolute;
+	left:50%;
+	margin-left:-50px;
+	top:-150px;
+	background-position: center;
+	background-repeat:no-repeat;
+	&:after {
+		content: " ";
+		height:52px;
+		width:2px;
+		display:block;
+		position:absolute;
+		background-color:white;
+		top:100%;
+		left:50%;
+		margin-left:-1px;
+	}
+	&:hover {
+		@include opacity(1);
+	}
+}
+
 /*site-wide typography*/
 
 body {
@@ -268,10 +369,11 @@ h1 {
 	a {
 		color:white;
 		font-size:3em;
-		opacity:0.8;
+		@include opacity(0.8);
+		@include transition (all 0.4s ease-in-out);
 		&:hover {
 			color:white;
-			opacity:1;
+			@include opacity(1);
 		}
 	}
 }
@@ -279,7 +381,7 @@ h1 {
 h2 {
 	font-family:$font2;
 	color:white;
-	opacity:0.7;
+	@include opacity(0.7);
 	p {
 		color:white;
 		font-size:1em;
@@ -299,15 +401,9 @@ h2 {
 
 /*nav*/
 
-.navLine {
-	height:13px;
-	border-bottom:1px solid #fff;
-	opacity:0.8;
-}
-
 .navRow {
 	height:26px;
-	margin-top:-42px;
+	margin-top:-26px;
 }
 
 .navWrap {
@@ -319,16 +415,65 @@ h2 {
 		text-align:center;
 		padding:0;
 		margin:0;
+		&:after {
+			content:" ";
+			width:40%;
+			height:1px;
+			background-color:white(0.6);
+			display:block;
+			position:absolute;
+			top:50%;
+			left:80%;
+		}
+		&#challengeLink:after {
+			left:87%;
+			width:32%;
+		}
+		&#elsaLink:after {
+			width:32%;
+		}
+		&:first-of-type:before {
+			content:" ";
+			width:1000px;
+			height:1px;
+			background-color:white(0.6);
+			display:block;
+			position:absolute;
+			top:50%;
+			right:80%;
+		}
+		&:last-of-type:after {
+			content:" ";
+			width:1000px;
+			height:1px;
+			background-color:white(0.6);
+			display:block;
+			position:absolute;
+			top:50%;
+			left:80%;
+
+		}
 		a {
 			color:white;
-			opacity:0.8;
+			@include opacity(0.8);
 			font-family:$font1;
 			font-size:1.2em;
 			font-weight:100;
 			text-transform:uppercase;
+			@include transition(all 0.2s ease-in-out);
 			&:hover {
-				opacity:1;
+				@include opacity(1);
+				text-decoration:underline;
 			}
+			&:active {
+				@include opacity(0.6);
+				color:$orange;
+			}
+		}
+		&.currentItem a	{
+				@include opacity(0.9);
+				color:$orange;
+				text-decoration:underline;
 		}
 	}
 }
@@ -336,11 +481,22 @@ h2 {
 /*donate area*/
 
 .donateWrap {
-	margin:2% auto 8% auto;
+	margin:6% auto 7% auto;
 	.percentage {
 		font-size:2em;
 		color: $orange;
 		letter-spacing: 1px;
+	}
+}
+
+.home {
+	.donateWrap {
+		margin:2% auto 8% auto;
+		.percentage {
+			font-size:2em;
+			color: $orange;
+			letter-spacing: 1px;
+		}
 	}
 }
 
@@ -372,4 +528,26 @@ h2 {
 
 /*social homepage styles*/
 
-@import 'social'
+@import 'social';
+
+/*footer styles*/
+
+footer {
+	border-top:2px solid white(1);
+	div.columns.small-centered {
+		text-align:center;
+		position:absolute;
+		left:50%;
+		margin-left:-70px;
+		margin-top:-70px;
+		background:white(1);
+		@include border-radius(90px 90px 0 0);
+		width:140px;
+		height:70px;
+		margin-bottom:-70px;
+		a {
+			position:relative;
+			top:10px;
+		}
+	}
+}
