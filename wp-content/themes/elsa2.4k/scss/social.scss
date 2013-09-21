@@ -1,0 +1,71 @@
+@import 'variables';
+
+//social row
+
+.row.social.fullWidth {
+	max-width: none;
+
+}
+
+.bobble {
+	display: block;
+	margin:0 auto;
+	height:100px;
+	width:100px;
+	border-radius:9999px;
+	border:2px solid white;
+	opacity:0.6;
+	position:absolute;
+	left:50%;
+	margin-left:-50px;
+	top:-150px;
+	background-position: center;
+	background-repeat:no-repeat;
+	&:after {
+		content: " ";
+		height:52px;
+		width:2px;
+		display:block;
+		position:absolute;
+		background-color:white;
+		top:100%;
+		left:50%;
+		margin-left:-1px;
+	}
+	&:hover {
+		opacity:1;
+	}
+}
+
+.streamHolder {
+	border:3px solid white;
+	&#facebookStreamHolder {
+		border-right:1px solid white;
+		border-left:none;
+		background-color:$fbBlue;
+		padding-right:none;
+	}
+	&#twitterStreamHolder {
+		border-left:2px solid white;
+		background-color:$twitterBlue;
+		padding-left:none;
+		border-right:none;
+	}
+}
+
+//facebook
+
+.facebookBobble {
+	background-color:$fbBlue;
+	background-size:auto 80%;
+	background-image:url("../img/logos/facebook.png");
+	background-position: 35% 100%;
+}
+
+//twitter
+
+.twitterBobble {
+	background-color:$twitterBlue;
+	background-size:80% auto;
+	background-image:url("../img/logos/twitter.png");
+}

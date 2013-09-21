@@ -1,0 +1,26 @@
+$fbBlue: rgb(60,81,145);
+$twitterBlue: rgb(41,117,179);
+$twitterBlueLight:rgb(42,168,235);
+$fbBlueLight: rgb(64,85,151);
+$orange: rgb(239,123,56);
+$font1: "Quicksand", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font2: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font3: "Avenir", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$gray: rgb(215,215,215);
+
+//mixins
+
+//gently embossed boxes
+@mixin box-emboss($opacity, $opacity2){
+    box-shadow:white($opacity) 0 1px 0, inset black($opacity2) 0 1px 0;
+}
+//gentle text-pressed effect
+@mixin letterpress($opacity){
+    text-shadow:white($opacity) 0 1px 0;
+}
+//for use on logos and images, thanks to screen readers
+@mixin hide-text{
+    font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+}

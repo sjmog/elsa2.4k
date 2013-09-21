@@ -1,9 +1,10 @@
-<form action="<?php bloginfo('siteurl'); ?>" class="search-form">
-    <div class="input-wrap search">
-        <label for="input-s" class="screen-reader-text">Search for:</label>
-        <input type="search" id="input-s" name="s" />
-    </div>
-    <div class="input-wrap submit">
-        <input type="submit" value="Search" class="button" />
+<form role="search" method="get" id="searchform" action="<?php echo home_url('/'); ?>">
+	<div class="row collapse">
+		<div class="small-8 columns">
+			<input type="text" value="" name="s" id="s" placeholder="<?php _e('Search', 'reverie'); ?>">
+		</div>
+		<div class="small-4 columns">
+			<input type="submit" id="searchsubmit" value="<?php _e('Search', 'reverie'); ?>" class="prefix button">
+		</div>
 	</div>
 </form>

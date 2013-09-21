@@ -1,0 +1,1073 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"me",
+				"messageArr"
+			],
+			[
+				"base",
+				"base64_encode"
+			],
+			[
+				"con",
+				"consumerSecret"
+			],
+			[
+				"cons",
+				"consumerKey"
+			],
+			[
+				"twitter",
+				"twitterJSON"
+			],
+			[
+				"consumer",
+				"consumerSecret"
+			],
+			[
+				"s",
+				"super"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"pro",
+				"protoPercent"
+			],
+			[
+				"new",
+				"newName"
+			],
+			[
+				"cur",
+				"currentObject"
+			],
+			[
+				"ca",
+				"categories"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"load",
+				"loadXMLDoc"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"animateon",
+				"animateOnClick"
+			],
+			[
+				"go",
+				"completelyGone"
+			],
+			[
+				"on",
+				"onclick	Attr"
+			],
+			[
+				"product",
+				"productId"
+			],
+			[
+				"ring",
+				"ringsizeId"
+			],
+			[
+				"clarit",
+				"clarityId"
+			],
+			[
+				"colour",
+				"colourId"
+			],
+			[
+				"carat",
+				"caratId"
+			],
+			[
+				"stone_s",
+				"stone_size_array"
+			],
+			[
+				"is",
+				"isset"
+			],
+			[
+				"uni",
+				"unitFontSize"
+			],
+			[
+				"wind",
+				"windSpeed"
+			],
+			[
+				"cart",
+				"cartUrl"
+			],
+			[
+				"addTo",
+				"addToCartButton"
+			],
+			[
+				"html",
+				"htmlentities"
+			],
+			[
+				"ht",
+				"htmlentities"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"current",
+				"currentAlphabet"
+			],
+			[
+				"data",
+				"dataPoint"
+			],
+			[
+				"el",
+				"elmt"
+			],
+			[
+				"key",
+				"keyCode"
+			],
+			[
+				"block",
+				"blockArray"
+			],
+			[
+				"blo",
+				"blockArray"
+			],
+			[
+				"rea",
+				"reactionTimeArray2"
+			],
+			[
+				"reaction",
+				"reactionTimeArray1"
+			],
+			[
+				"the",
+				"theElement"
+			],
+			[
+				"reac",
+				"reactionTimeArray2"
+			],
+			[
+				"react",
+				"reactionTimeArray1"
+			],
+			[
+				"reactio",
+				"reactionTimeArray"
+			],
+			[
+				"extend_product",
+				"extend_product_model"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "header.php",
+			"settings":
+			{
+				"buffer_size": 4509,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "nav.php",
+			"settings":
+			{
+				"buffer_size": 551,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "page.php",
+			"settings":
+			{
+				"buffer_size": 778,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "footer.php",
+			"settings":
+			{
+				"buffer_size": 946,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scss/style.scss",
+			"settings":
+			{
+				"buffer_size": 5113,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "donatebar.php",
+			"settings":
+			{
+				"buffer_size": 923,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "page-full.php",
+			"settings":
+			{
+				"buffer_size": 243,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "page-home.php",
+			"settings":
+			{
+				"buffer_size": 261,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "social-stream.php",
+			"settings":
+			{
+				"buffer_size": 221,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/jquery.timeago.js",
+			"settings":
+			{
+				"buffer_size": 6110,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "stream-facebook.php",
+			"settings":
+			{
+				"buffer_size": 995,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "facebookPost.php",
+			"settings":
+			{
+				"buffer_size": 1501,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "stream-twitter.php",
+			"settings":
+			{
+				"buffer_size": 1049,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "tweet.php",
+			"settings":
+			{
+				"buffer_size": 1053,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "twitteroauth.php",
+			"settings":
+			{
+				"buffer_size": 7710,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sidebar.php",
+			"settings":
+			{
+				"buffer_size": 290,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Applications/MAMP/htdocs/wordpress-base/wp-content/themes/elsa2.4k/js/jquery.bigtext.js",
+		"/Applications/MAMP/htdocs/wordpress-base/wp-content/themes/elsa2.4k/css/font-awesome.min.css",
+		"/Applications/MAMP/htdocs/wordpress-base/wp-content/themes/elsa2.4k/css/font-awesome.css",
+		"/Applications/MAMP/htdocs/wordpress-base/wp-content/themes/elsa2.4k/css/font-awesome-ie7.min.css",
+		"/Applications/MAMP/htdocs/wordpress-base/wp-content/themes/elsa2.4k/css/font-awesome-ie7.css",
+		"/Applications/MAMP/htdocs/wordpress-base/wp-content/themes/elsa2.4k/OAuth.php",
+		"/Applications/MAMP/htdocs/wordpress-base/wp-content/themes/elsa2.4k/twitteroauth.php",
+		"/Applications/MAMP/htdocs/wordpress-base/wp-content/themes/elsa2.4k/config.rb",
+		"/Applications/MAMP/htdocs/wordpress-base/wp-content/themes/elsa2.4k/scss/global.scss",
+		"/Applications/MAMP/htdocs/wordpress-base/wp-content/themes/elsa2.4k/style.css",
+		"/Applications/MAMP/htdocs/reaction_timer/test.php",
+		"/Volumes/srv/biagiothejewellers.com/htdocs/templates/biagio-php/partials/shop;product.php",
+		"/Volumes/srv/biagiothejewellers.com/htdocs/templates/biagio-php/layouts/home.php",
+		"/Volumes/srv/biagiothejewellers.com/htdocs/templates/biagio-php/partials/layout;footer.php",
+		"/Volumes/srv/biagiothejewellers.com/htdocs/templates/biagio-php/partials/shop;quick_actions.php",
+		"/Volumes/srv/biagiothejewellers.com/htdocs/resources/css/style.css",
+		"/Volumes/srv/biagiothejewellers.com/htdocs/templates/biagio-php/layouts/inner.php",
+		"/Volumes/srv/biagiothejewellers.com/htdocs/templates/biagio-php/partials/layout;head.php",
+		"/Volumes/srv/biagiothejewellers.com/htdocs/templates/biagio-php/pages/guide/page_guide.php",
+		"/Volumes/srv/biagiothejewellers.com/htdocs/templates/biagio-php/partials/layout;featured_nav.php",
+		"/Volumes/srv/biagiothejewellers.com/htdocs/templates/biagio-php/pages/category/page_category.php",
+		"/Volumes/srv/biagiothejewellers.com/htdocs/modules/shop/classes/shop_actions.php",
+		"/Volumes/srv/biagiothejewellers.com/htdocs/resources/javascript/foundation/foundation.dropdown.js",
+		"/Users/Sam/Library/Caches/Cleanup At Startup/Transmit/3E097D04-BC17-405C-82E5-C7FCF19402E7/wpsc-grid_view.php",
+		"/Applications/MAMP/htdocs/weatherio/css/main.css",
+		"/Applications/MAMP/htdocs/weatherio/index.html",
+		"/Applications/MAMP/htdocs/elsa/app/wp-content/themes/elsa2.4k/footer.php",
+		"/Applications/MAMP/htdocs/elsa/app/wp-content/themes/elsa2.4k/style.css",
+		"/Applications/MAMP/htdocs/elsa/app/wp-content/themes/elsa2.4k/archive.php",
+		"/Applications/MAMP/htdocs/elsa/app/wp-content/themes/elsa2.4k/header.php",
+		"/Applications/MAMP/htdocs/elsa/app/wp-content/themes/elsa2.4k/style.scss",
+		"/Applications/MAMP/htdocs/weatherio/css/climacons.css",
+		"/Volumes/srv/biagiothejewellers.com/htdocs/templates/biagio-php/partials/shop;cart_content.php",
+		"/Volumes/srv/biagiothejewellers.com/htdocs/templates/biagio-php/partials/pagination.php",
+		"/Volumes/srv/biagiothejewellers.com/htdocs/templates/biagio-php/partials/layout;header.php",
+		"/Volumes/srv/biagiothejewellers.com/htdocs/templates/biagio-php/partials/gallery;sets.php",
+		"/Volumes/srv/biagiothejewellers.com/htdocs/resources/javascript/jquery.fittext.js",
+		"/Volumes/srv/biagiothejewellers.com/htdocs/templates/biagio-php/pages/product/page_product.php",
+		"/Volumes/srv/biagiothejewellers.com/htdocs/templates/biagio-php/partials/category_grid.php",
+		"/Volumes/srv/biagiothejewellers.com/htdocs/templates/biagio-php/pages/home/page_home.php",
+		"/Volumes/srv/biagiothejewellers.com/htdocs/templates/biagio-php/partials/shop;mini_cart.php",
+		"/Applications/MAMP/htdocs/rabdf/ember-rails-devise-demo/app/assets/javascripts/routes/application_route.js",
+		"/Applications/MAMP/htdocs/rabdf/ember-rails-devise-demo/app/assets/javascripts/routes/floorplan_route.js",
+		"/Applications/MAMP/htdocs/rabdf/ember-rails-devise-demo/app/assets/javascripts/models/floorplan.js",
+		"/Applications/MAMP/htdocs/rabdf/ember-rails-devise-demo/app/assets/javascripts/models/stall.js",
+		"/Applications/MAMP/htdocs/rabdf/ember-rails-devise-demo/app/assets/javascripts/templates/system.hbs",
+		"/Applications/MAMP/htdocs/rabdf/ember-rails-devise-demo/app/assets/javascripts/views/system_view.js",
+		"/Applications/MAMP/htdocs/rabdf/ember-rails-devise-demo/app/assets/javascripts/views/floorplans_view.js",
+		"/Applications/MAMP/htdocs/rabdf/ember-rails-devise-demo/app/assets/javascripts/controllers/floorplan_controller.js",
+		"/Applications/MAMP/htdocs/rabdf/ember-rails-devise-demo/app/assets/javascripts/controllers/floorplans_controller.js",
+		"/Applications/MAMP/htdocs/rabdf/ember-rails-devise-demo/app/assets/javascripts/controllers/stall_controller.js",
+		"/Applications/MAMP/htdocs/rabdf/ember-rails-devise-demo/app/assets/javascripts/controllers/stalls_controller.js",
+		"/Applications/MAMP/htdocs/rabdf/ember-rails-devise-demo/app/assets/javascripts/routes/stall_route.js",
+		"/Applications/MAMP/htdocs/rabdf/ember-rails-devise-demo/app/assets/javascripts/views/floorplan_view.js",
+		"/Applications/MAMP/htdocs/rabdf/ember-rails-devise-demo/app/assets/javascripts/views/stall_view.js",
+		"/Applications/MAMP/htdocs/rabdf/ember-rails-devise-demo/app/assets/javascripts/views/stalls_view.js",
+		"/Users/Sam/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/Sam/Library/Application Support/Sublime Text 3/Packages/User/Plain text.sublime-settings",
+		"/Applications/MAMP/htdocs/reaction_timer/finish.php",
+		"/Applications/MAMP/htdocs/reaction_timer/complete.php",
+		"/Applications/MAMP/htdocs/reaction_timer/forms.php",
+		"/Applications/MAMP/htdocs/reaction_timer/index.php",
+		"/Applications/MAMP/htdocs/rabdf/ember-rails-devise-demo/Gemfile",
+		"/Applications/MAMP/htdocs/reaction_timer/style.css",
+		"/Users/Sam/Library/Caches/Cleanup At Startup/Transmit/D0B95443-B5AD-4ED6-BF5D-3220527D5927/.htaccess",
+		"/Volumes/srv/awoolfordarchitects.com/htdocs/wp-content/themes/awa/inc/roots-htaccess.php",
+		"/Volumes/srv/awoolfordarchitects.com/htdocs/wp-content/themes/awa/inc/h5bp-htaccess",
+		"/Volumes/srv/awoolfordarchitects.com/htdocs/wp-content/themes/awa/functions.php",
+		"/Volumes/srv/biagiothejewellers.com/htdocs/modules/ghostgoldmarkimport/classes/ghostgoldmarkimport_actions.php",
+		"/Volumes/srv/biagiothejewellers.com/htdocs/modules/ghostgoldmarkimport/classes/ghostgoldmarkimport_module.php",
+		"/Users/Sam/Downloads/demoproductext/classes/demoproductext_module.php",
+		"/Users/Sam/Documents/Development/ApplianSys/portal/app/assets/stylesheets/application.css"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Applications/MAMP/htdocs/rabdf/ember-rails-devise-demo/app/assets/javascripts"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"footer",
+			"->product",
+			"item_data[",
+			"custom",
+			"$custom_data",
+			"div",
+			"rating_",
+			"sitemap_",
+			"hover",
+			"box-shadow",
+			"1s",
+			"class=\"footerControl\"",
+			"data-dropdown",
+			"dropUp",
+			"data-dropdown-content",
+			"transition",
+			"f-dropdown",
+			"orbit",
+			"flipcardback",
+			"centraliser",
+			"trigger",
+			"sharing",
+			"#Grid",
+			"Grid",
+			"product-list ul",
+			"pricetag",
+			"item",
+			"2s",
+			"width",
+			"stone_colour",
+			"colour",
+			"order",
+			"product",
+			"finish",
+			"x_finish",
+			"finishes",
+			"ring_size",
+			"x_ringsize",
+			"ring_sizes",
+			"stone_colour",
+			"stone_colours",
+			"stone_colour",
+			"stone_colours",
+			"stone_size",
+			"stone_sizes",
+			"metal_type",
+			"bold",
+			"document.getElementById('temperature').innerHTML = Ctemp + '&deg;C';",
+			"<img ",
+			"				switch(Ctemp) {\n									case (Ctemp <= 0):\n										document.getElementById('thermometer').innerHTML = '<img id=\"embeddedIcon\" class=\"svg climacon\" src=\"img/thermometer0.svg\" />';\n									break;\n									case (Ctemp > 0 && Ctemp <= 10):\n										document.getElementById('thermometer').innerHTML = '<img id=\"embeddedIcon\" class=\"svg climacon\" src=\"img/thermometer25.svg\" />';\n									break;\n									case (Ctemp > 10 && Ctemp <= 20):\n										document.getElementById('thermometer').innerHTML = '<img id=\"embeddedIcon\" class=\"svg climacon\" src=\"img/thermometer50.svg\" />';\n									break;\n									case (Ctemp >20 && Ctemp <=30):\n										document.getElementById('thermometer').innerHTML = '<img id=\"embeddedIcon\" class=\"svg climacon\" src=\"img/thermometer75.svg\" />';\n									break;\n									case (Ctemp > 30):\n										document.getElementById('thermometer').innerHTML = '<img id=\"embeddedIcon\" class=\"svg climacon\" src=\"img/thermometer100.svg\" />';\n									break;\n								}",
+			"this",
+			"case (this",
+			"&deg;",
+			".svg\" />';",
+			"<img src=\"img/cloudDrizzleSun.svg\" type=\"image/svg+xml\" />",
+			"embed ",
+			"embed",
+			"500",
+			"pagina",
+			"cart",
+			"background-image",
+			"bgimg",
+			"f-dropdown",
+			"/path/to/mask.png",
+			"1px dotted rgb(119,120,118);",
+			"padding-bottom",
+			"short-description",
+			".short-description",
+			"js",
+			"EmberRailsDevise",
+			"‘",
+			"'); ?>",
+			"htmlentities('",
+			"’",
+			"text",
+			"order_item",
+			"p"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"App"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "/Applications/MAMP/htdocs/wordpress-base/wp-content/themes/elsa2.4k"
+		}
+	],
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "header.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4509,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4507,
+								4507
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 817.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "nav.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 551,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								482,
+								482
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "page.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 778,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								729,
+								729
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "footer.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 946,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								896,
+								896
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "scss/style.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5113,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3059,
+								3059
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2156.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 5,
+					"file": "donatebar.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 923,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								440,
+								440
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "page-full.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 243,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								243,
+								243
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "page-home.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 261,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								83,
+								83
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "social-stream.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 221,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								221,
+								221
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "js/jquery.timeago.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6110,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6110,
+								6110
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "stream-facebook.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 995,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								884,
+								884
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "facebookPost.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1501,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1136,
+								1136
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "stream-twitter.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1049,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1042,
+								794
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "tweet.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1053,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								1053
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "twitteroauth.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7710,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4720,
+								4720
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1359.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "sidebar.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 290,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								290,
+								290
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"project": "",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 242.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

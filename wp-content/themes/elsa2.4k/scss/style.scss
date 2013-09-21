@@ -1,0 +1,375 @@
+/* 
+ * This is the main stylesheet loaded by default.
+ */
+
+// import normalize, stay at top
+@import "normalize";
+
+// Global Foundation Settings
+@import "settings";
+
+// Comment out this import if you are customizing you imports below
+@import "foundation";
+
+/* Start to customize Reverie */
+
+@import "variables";
+
+// add some extra style to row to beautify custom background image
+header.row,
+.container.row,
+.row.full-width {
+	background-color: rgba(255,255,255,0.9);
+}
+
+// adjusting header
+h4.subheader {
+	margin-top: -1em;
+}
+
+// add new pagination class for WordPress, Sass is amazingly fast
+.page-numbers { @include pagination; }
+
+// customizing pagination for WordPress using Foundation mixins, this is not beautiful I know
+.page-numbers li {
+	span:hover a,
+	span a:focus {
+		background: $pagination-link-active-bg;
+	}
+	span.current {
+		background: $pagination-link-current-background;
+		padding: $pagination-link-pad;
+		color: $pagination-link-current-font-color;
+		font-weight: $pagination-link-current-font-weight;
+		cursor: $pagination-link-current-cursor;
+	}
+}
+
+// add some basic comment styles
+ol.commentlist {
+	margin-left: 0;
+	margin-top: 2em;
+	li {
+		list-style: none;
+		margin-bottom: 2em;
+	}
+		.comment-author img {
+			border-radius: 50%;
+			float: left;
+			margin: 0 1em 0 0;
+		}
+		.author-meta {
+			display: inline-block;
+		}
+			cite.fn {
+				@extend h4;
+				margin-right: 0.5em;
+			}
+		section.comment {
+			@include panel(white, 20px);
+		}
+			a.comment-reply-link {
+				float: right;
+				position: relative;
+				bottom: 1em;
+			}
+}
+
+// add some extra margin to ul
+ul {
+	margin-#{$default-float}: $list-side-margin;
+}
+
+// add some margin for embeds in post
+figure {
+	margin-bottom: $paragraph-margin-bottom;
+}
+
+// adjust search button on top-bar
+input.prefix.button {
+	line-height: 1;
+}
+
+// adjust search button on sideba
+#sidebar input.prefix.button {
+	line-height: 0.7;
+}
+
+// Add Class for Images
+img.alignright {
+	float: right;
+	margin: 0 0 18px 18px;
+}
+	
+img.alignleft {
+	float: left;
+	margin: 0 18px 18px 0;
+}
+
+img.aligncenter {
+	display: block;
+	margin: 18px auto;
+	}
+
+// Add HTML5 Caption Class for Images
+figure.figure {
+	margin: 0 auto;
+	display: inline-block;
+	figcaption {
+		padding: 8px 10px;
+		color: gray;
+		margin-bottom: $paragraph-margin-bottom;
+	}
+}
+
+figure.alignright.figure {
+	float: right;
+	margin: 0 0 18px 18px;
+}
+
+figure.alignleft.figure {
+	float: left;
+	margin: 0 18px 18px 0;
+}
+
+/* Author styles */
+
+/*overrides*/
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.fullWidth {
+	width:100%;
+	max-width:none;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size:cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	&.row {
+		margin-left:0;
+		margin-right:0;
+	}
+}
+
+.fullHeight {
+	height:100%;
+}
+
+header {
+	background-color:transparent !important;
+}
+
+/*site-wide components*/
+
+//examples from mixins
+//.embossed {
+//    @include box-emboss(0.8, 0.05);
+//}
+
+//.letterpressed {
+//	@include letterpress(0.8);
+//}
+
+//.logo {
+//	@include hide-text();
+//}
+
+.absoluteCentral100 {
+	display: block;
+	margin:0 auto;
+	height:100px;
+	width:100px;
+	border-radius:9999px;
+	border:1px solid white;
+	opacity:0.6;
+	background:red;
+	position:absolute;
+	left:50%;
+	margin-left:-50px;
+}
+
+.spacerMin100 {
+	width:100%;
+	background:transparent !important;
+	height:100px;
+}
+
+.postFormat {
+	max-width:640px !important;
+	margin:0 auto !important;
+	.content {
+
+	}
+}
+
+
+
+.button {
+	border-radius: 8px;
+	font-family:$font3;
+	border:none;
+	box-shadow:none;
+	font-weight:normal;
+	font-size:1.8em;
+	padding:14px;
+	text-align:center;
+	&.primary {
+		background: $orange;
+		color:#fff;
+		&:hover {
+			background: #fff;
+			color:$orange;
+		}
+	}
+	&.secondary {
+		background: #fff;
+		color:$orange;
+		&:hover {
+			background: $orange;
+			color:#fff;
+		}
+	}
+	&.block {
+		display:block;
+	}
+	&.social {
+		background-color:transparent;
+		&.facebook {
+			
+		}
+		&.twitter {
+
+		}
+	}
+}
+
+/*site-wide typography*/
+
+body {
+	font-family:$font2;
+	font-weight:100;
+	p {
+		font-weight:100;
+	}
+}
+
+h1 {
+	font-family:$font1;
+	text-transform:uppercase;
+	color:white;
+	font-weight:100;
+	a {
+		color:white;
+		font-size:3em;
+		opacity:0.8;
+		&:hover {
+			color:white;
+			opacity:1;
+		}
+	}
+}
+
+h2 {
+	font-family:$font2;
+	color:white;
+	opacity:0.7;
+	p {
+		color:white;
+		font-size:1em;
+		font-weight:100;
+		letter-spacing:2px;
+	}
+}
+
+.superscript {
+	font-size:0.5em;	
+	position: absolute;
+	line-height: 2em;
+	text-indent: 2em;
+}
+
+/*header*/
+
+/*nav*/
+
+.navLine {
+	height:13px;
+	border-bottom:1px solid #fff;
+	opacity:0.8;
+}
+
+.navRow {
+	height:26px;
+	margin-top:-42px;
+}
+
+.navWrap {
+	ul li {
+		display:inline-block;
+		position:relative;
+		top:26px;
+		width:25%;
+		text-align:center;
+		padding:0;
+		margin:0;
+		a {
+			color:white;
+			opacity:0.8;
+			font-family:$font1;
+			font-size:1.2em;
+			font-weight:100;
+			text-transform:uppercase;
+			&:hover {
+				opacity:1;
+			}
+		}
+	}
+}
+
+/*donate area*/
+
+.donateWrap {
+	margin:2% auto 8% auto;
+	.percentage {
+		font-size:2em;
+		color: $orange;
+		letter-spacing: 1px;
+	}
+}
+
+.barOuter {
+	width:100%;
+	height:2px;
+	margin:26px auto -26px auto;
+	background:$gray;
+}
+
+.barInner {
+	width:44%; /*edit this via the indiegogo api*/
+	height:2px;
+	background:$orange;
+
+}
+
+
+
+.titlesWrap {
+	text-align:center !important;
+	@media screen and (max-width: 540px) {
+		
+	}
+	@media screen and (max-width: 480px) {
+		
+	}
+}
+
+/*social homepage styles*/
+
+@import 'social'
