@@ -95,7 +95,54 @@ function reverie_entry_meta() {
 	echo '<time class="updated" datetime="'. get_the_time('c') .'" pubdate>'. sprintf(__('Posted on %s at %s.', 'reverie'), get_the_time('l, F jS, Y'), get_the_time()) .'</time>';
 	echo '<p class="byline author">'. __('Written by', 'reverie') .' <a href="'. get_author_posts_url(get_the_author_meta('ID')) .'" rel="author" class="fn">'. get_the_author() .'</a></p>';
 }
-// Register Custom Post Type
+// Register Custom Post Types: 0) personal posts
+
+add_action( 'init', 'register_cpt_personal_post' );
+
+function register_cpt_personal_post() {
+
+    $labels = array( 
+        'name' => _x( 'Personal posts', 'personal_post' ),
+        'singular_name' => _x( 'Personal post', 'personal_post' ),
+        'add_new' => _x( 'Add New', 'personal_post' ),
+        'add_new_item' => _x( 'Add New Personal post', 'personal_post' ),
+        'edit_item' => _x( 'Edit Personal post', 'personal_post' ),
+        'new_item' => _x( 'New Personal post', 'personal_post' ),
+        'view_item' => _x( 'View Personal post', 'personal_post' ),
+        'search_items' => _x( 'Search Personal posts', 'personal_post' ),
+        'not_found' => _x( 'No personal posts found', 'personal_post' ),
+        'not_found_in_trash' => _x( 'No personal posts found in Trash', 'personal_post' ),
+        'parent_item_colon' => _x( 'Parent Personal post:', 'personal_post' ),
+        'menu_name' => _x( 'Personal posts', 'personal_post' ),
+    );
+
+    $args = array( 
+        'labels' => $labels,
+        'hierarchical' => false,
+        'description' => 'Elsa\'s personal posts.',
+        'supports' => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'trackbacks', 'custom-fields', 'comments', 'revisions', 'page-attributes' ),
+        'taxonomies' => array( 'category', 'post_tag' ),
+        'public' => true,
+        'show_ui' => true,
+        'show_in_menu' => true,
+        'menu_position' => 5,
+        
+        'show_in_nav_menus' => true,
+        'publicly_queryable' => true,
+        'exclude_from_search' => false,
+        'has_archive' => true,
+        'query_var' => true,
+        'can_export' => true,
+        'rewrite' => true,
+        'capability_type' => 'post'
+    );
+
+    register_post_type( 'personal_post', $args );
+
+}
+
+// and 1) testimonials
+
 function hc_testimonial_post_type() {
 
 	$labels = array(
@@ -126,7 +173,7 @@ function hc_testimonial_post_type() {
 		'show_in_nav_menus'   => true,
 		'show_in_admin_bar'   => true,
 		'menu_position'       => 5,
-		'menu_icon'           => '',
+		'menu_icon'           => get_template_directory_uri() . "/img/icons/admin/testimonials.png",
 		'can_export'          => true,
 		'has_archive'         => true,
 		'exclude_from_search' => true,
@@ -135,6 +182,139 @@ function hc_testimonial_post_type() {
 	);
 	register_post_type( 'testimonial', $args );
 
+}
+// and 2) Sponsor posts
+
+add_action( 'init', 'register_cpt_sponsor_post' );
+
+function register_cpt_sponsor_post() {
+
+    $labels = array( 
+        'name' => _x( 'Sponsor posts', 'sponsor_post' ),
+        'singular_name' => _x( 'Sponsor post', 'sponsor_post' ),
+        'add_new' => _x( 'Add New', 'sponsor_post' ),
+        'add_new_item' => _x( 'Add New Sponsor post', 'sponsor_post' ),
+        'edit_item' => _x( 'Edit Sponsor post', 'sponsor_post' ),
+        'new_item' => _x( 'New Sponsor post', 'sponsor_post' ),
+        'view_item' => _x( 'View Sponsor post', 'sponsor_post' ),
+
+        'search_items' => _x( 'Search Sponsor posts', 'sponsor_post' ),
+        'not_found' => _x( 'No sponsor posts found', 'sponsor_post' ),
+        'not_found_in_trash' => _x( 'No sponsor posts found in Trash', 'sponsor_post' ),
+        'parent_item_colon' => _x( 'Parent Sponsor post:', 'sponsor_post' ),
+        'menu_name' => _x( 'Sponsor posts', 'sponsor_post' ),
+    );
+
+    $args = array( 
+        'labels' => $labels,
+        'hierarchical' => false,
+        'description' => 'Posts by Sponsors.',
+        'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'custom-fields' ),
+        
+        'public' => true,
+        'show_ui' => true,
+        'show_in_menu' => true,
+        'menu_position' => 5,
+        'menu_icon' => get_template_directory_uri() . "/img/icons/admin/sponsors.png",
+        'show_in_nav_menus' => true,
+        'publicly_queryable' => true,
+        'exclude_from_search' => false,
+        'has_archive' => true,
+        'query_var' => true,
+        'can_export' => true,
+        'rewrite' => true,
+        'capability_type' => 'post'
+    );
+
+    register_post_type( 'sponsor_post', $args );
+
+}
+
+//and 3) organiser posts
+
+add_action( 'init', 'register_cpt_organiser_post' );
+
+function register_cpt_organiser_post() {
+
+    $labels = array( 
+        'name' => _x( 'Organiser posts', 'organiser_post' ),
+        'singular_name' => _x( 'Organiser post', 'organiser_post' ),
+        'add_new' => _x( 'Add New', 'organiser_post' ),
+        'add_new_item' => _x( 'Add New Organiser post', 'organiser_post' ),
+        'edit_item' => _x( 'Edit Organiser post', 'organiser_post' ),
+        'new_item' => _x( 'New Organiser post', 'organiser_post' ),
+        'view_item' => _x( 'View Organiser post', 'organiser_post' ),
+
+        'search_items' => _x( 'Search Organiser posts', 'organiser_post' ),
+        'not_found' => _x( 'No Organiser posts found', 'organiser_post' ),
+        'not_found_in_trash' => _x( 'No Organiser posts found in Trash', 'organiser_post' ),
+        'parent_item_colon' => _x( 'Parent Organiser post:', 'organiser_post' ),
+        'menu_name' => _x( 'Organiser posts', 'organiser_post' ),
+    );
+
+    $args = array( 
+        'labels' => $labels,
+        'hierarchical' => false,
+        'description' => 'Posts by Organisers.',
+        'supports' => array('title','editor','excerpt','trackbacks','custom-fields','revisions','thumbnail','author','page-attributes','post-formats'),
+        
+        'public' => true,
+        'show_ui' => true,
+        'show_in_menu' => true,
+        'menu_position' => 5,
+        'menu_icon' => get_template_directory_uri() . "/img/icons/admin/great_pacific_race.png",
+        'show_in_nav_menus' => true,
+        'publicly_queryable' => true,
+        'exclude_from_search' => false,
+        'has_archive' => true,
+        'query_var' => true,
+        'can_export' => true,
+        'rewrite' => true,
+        'capability_type' => 'post'
+    );
+
+    register_post_type( 'organiser_post', $args );
+
+}
+
+//extend page functionality to include general title, subtitle etc.
+
+add_action( 'init', 'register_taxonomy_subtitles' );
+
+function register_taxonomy_subtitles() {
+
+    $labels = array( 
+        'name' => _x( 'Subtitles', 'subtitles' ),
+        'singular_name' => _x( 'Subtitle', 'subtitles' ),
+        'search_items' => _x( 'Search Subtitles', 'subtitles' ),
+        'popular_items' => _x( 'Popular Subtitles', 'subtitles' ),
+        'all_items' => _x( 'All Subtitles', 'subtitles' ),
+        'parent_item' => _x( 'Parent Subtitle', 'subtitles' ),
+        'parent_item_colon' => _x( 'Parent Subtitle:', 'subtitles' ),
+        'edit_item' => _x( 'Edit Subtitle', 'subtitles' ),
+        'update_item' => _x( 'Update Subtitle', 'subtitles' ),
+        'add_new_item' => _x( 'Add New Subtitle', 'subtitles' ),
+        'new_item_name' => _x( 'New Subtitle', 'subtitles' ),
+        'separate_items_with_commas' => _x( 'Separate subtitles with commas', 'subtitles' ),
+        'add_or_remove_items' => _x( 'Add or remove Subtitles', 'subtitles' ),
+        'choose_from_most_used' => _x( 'Choose from most used Subtitles', 'subtitles' ),
+        'menu_name' => _x( 'Subtitles', 'subtitles' ),
+    );
+
+    $args = array( 
+        'labels' => $labels,
+        'public' => true,
+        'show_in_nav_menus' => true,
+        'show_ui' => true,
+        'show_tagcloud' => true,
+        'show_admin_column' => true,
+        'hierarchical' => false,
+
+        'rewrite' => true,
+        'query_var' => true
+    );
+
+    register_taxonomy( 'subtitles', array('page'), $args );
 }
 
 // Hook into the 'init' action

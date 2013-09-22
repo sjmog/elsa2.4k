@@ -51,12 +51,10 @@
 	</div>
 <? endif; ?>
 <!--get the page featured image and set it as the background-->
-<?php if (has_post_thumbnail( $post->ID ) ): ?>
-<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
-<?php else:
-$image = "http://s3.amazonaws.com/rapgenius/filepicker%2FvCleswcKTpuRXKptjOPo_kitten.jpg";
-endif; ?>
-<section class="fullWidth fullHeight" style="background-image:url('<?php echo $image[0]; ?>')">
+
+	<section class="fullWidth fullHeight" style="background-image:url('<?php the_field('page_image') ?>')">
+
+
 	<header class="row" role="banner">
 		<div class="small-12 columns donateWrap">
 			<?php get_template_part('donatebar'); ?>
@@ -64,23 +62,33 @@ endif; ?>
 		<div class="small-12 columns titlesWrap">
 			<div class="row">
 				<div class="small-12 columns headersWrap">
-					<h1><a href="<?php bloginfo('url'); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>
-					<h2><?php $content = apply_filters('the_content', $post->post_content); echo $content;  ?></h2>
+					<h1><a href="<?php bloginfo('url'); ?>" title="<?php the_title(); ?>"><?php the_field('header');?></a></h1>
+					<h2><?php the_field('subHeader');?></h2>
 				</div>
 			</div>
 			<div class="row">
 				<div class="small-8 small-centered columns">
 					<div class="large-6 small-centered large-uncentered columns ctaWrap">
+						<?php if (is_page('Blog')) { ?>
+						<a href="/challenge" class="button primary block">The Challenge</a>
+						<?php } else { ?>
 						<a href="/blog" class="button primary block">Elsa</a>
+						<?php }; ?>
 					</div>
 					<div class="large-6 small-centered large-uncentered columns ctaWrap">
+						<?php if (is_page('The Cause')) { ?>
+						<a href="/challenge" class="button primary block">The Challenge</a>
+						<?php } else { ?>
 						<a href="/cause" class="button primary block">The Cause</a>
+						<?php }; ?>
 					</div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="large-4 small-centered small-8 columns ctaWrap">
-					<a class="button secondary block">Sponsorships</a>
+				<div class="large-4 small-centered small-8 columns">
+					<div class="large-12 small-centered small-12 columns ctaWrap">
+						<a href="#" data-reveal-id="myModal" class="button secondary block">Sponsorships</a>
+					</div>
 				</div>
 			</div>
 		</div>

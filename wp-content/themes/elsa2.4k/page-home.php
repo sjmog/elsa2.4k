@@ -4,8 +4,6 @@ Template Name: Elsa Homepage
 */
 get_header(); ?>
 <section class="container" role="document">
-<!--random testimonial row-->
-<?php get_template_part('testimonial'); ?>
 
 <!-- Row for main content area -->
 

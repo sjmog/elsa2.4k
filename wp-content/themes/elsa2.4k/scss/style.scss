@@ -21,7 +21,7 @@
 header.row,
 .container.row,
 .row.full-width {
-	background-color: rgba(255,255,255,0.9);
+	
 }
 
 // adjusting header
@@ -143,9 +143,12 @@ html, body {
   width: 100%;
   padding: 0;
   margin: 0;
+  overflow-x:hidden;
+  margin-top:0 !important;
 }
 
 .fullWidth {
+	
 	width:100%;
 	max-width:none;
 	background-repeat: no-repeat;
@@ -166,6 +169,18 @@ html, body {
 
 header {
 	background-color:transparent !important;
+}
+
+.causePage + footer {
+	display:none;
+}
+
+.challengePage + footer {
+	display:none;
+}
+
+.blogPage + footer {
+	display:none;
 }
 
 /*site-wide components*/
@@ -264,6 +279,230 @@ header {
 			}
 		}
 	}
+	.postComments {
+		display:none;
+	}
+	&.thePost {
+		max-width:960px !important;
+		&:last-of-type {
+
+		}
+		.preContent {
+			h2 {
+				text-align:right;
+				margin-top:0.5em;
+				margin-bottom:0.25em;
+				a {
+					color:#777;
+					font-family:$font2;
+					
+					font-weight:100;
+				}
+			}
+			.timeWrap {
+				text-align:right;
+				color:#777;
+				@include opacity(0.6);
+				margin-bottom:0.5em;
+			}
+			@media screen and (max-width: 960px) {
+				h2 {
+						padding-right:5%;
+				}
+				.timeWrap {
+					padding-right:5%;
+				}
+			}
+			@media screen and (max-width: 768px) {
+				height:85px;
+			}
+			@media screen and (max-width: 540px) {
+				float:right;
+				height:auto;
+				padding-right:16px;
+				width:50%;
+			}
+		}
+		.content * {
+			color:#333;
+			p {
+				font-family:$font3;
+				font-weight:100;
+				font-size:16px;
+				color:#333;
+				@include opacity(0.9);
+				&:first-of-type {
+					border-left:1px solid $gray;
+					margin-left:-3%;
+					padding-left:3%;
+				}
+			}
+			@media screen and (max-width: 960px) {
+				p:first-of-type {
+					margin-left:-15% !important;
+					padding-right:5%;
+				}
+			}
+			@media screen and (max-width: 768px) {
+				p {
+					margin-left:0 !important;
+					padding: 0px 18px;
+					&:first-of-type {
+						border-left:none !important;
+						margin-left:0 !important;
+						padding: 8px 12px;
+						border-top:1px solid $gray;
+					}
+				}
+			}
+			@media screen and (max-width: 540px) {
+				p {
+					margin-left:0 !important;
+					padding: 0px 18px;
+					&:first-of-type {
+						padding: 8px 12px;
+						border-top:none;
+					}
+				}
+			}
+		}
+		.postContent {
+			margin-top:30px;
+			* {
+				font-weight:400;
+				color:#333;
+				@include opacity(0.6);
+			}
+			i {
+				margin-left:8px;
+			}
+			.socialPostWrap {
+				text-align:right;
+				a.button.social {
+					padding:0px 8px;
+				}
+			}
+		}
+		.authorColumn {
+			img {
+				top:0;
+				margin-top:100px;
+				height:120px;
+				width:120px;
+				@media screen and (max-width: 768px) {
+					top:0;
+					margin-top:10px;
+					margin-bottom:10px;
+				}
+			}
+			&:after {
+				content: " ";
+				height:1px;
+				width:40%;
+				display:block;
+				position:absolute;
+				background-color:$gray;
+				top:50%;
+				left:50%;
+				margin-left:50px;
+				margin-top:51px;
+			}
+			@media screen and (max-width: 960px) {
+				&:after {
+					width:29%;
+				}
+			}
+			@media screen and (max-width: 768px) {
+				margin-bottom:-20px;
+				&:after {
+					width:1px;
+					height:70%;
+					left:50%;
+					margin-left:0;
+				}
+			}
+			@media screen and (max-width: 540px) {
+				float:left !important;
+				width:50% !important;
+				margin-bottom: -88px;
+				padding-left:40px;
+				&:after {
+					height:1px;
+					width:70%;
+					left:0;
+					margin-left:-40%;
+					top:0;
+				}
+				img {
+					float:left;
+					height:80px;
+					width:80px;
+				}
+			}
+		}
+	}
+	&.causePost {
+		&:first-of-type {
+			margin-top:30px;
+		}
+		.authorColumn {
+			img {
+				margin-top:30px !important;
+				@include border-radius(0);
+				height:100px;
+				width:auto;
+			}
+			&:after {
+				top:20%;
+			}
+		}
+		.blogPostWrap {
+			.timeWrap {
+				display:none;
+			}
+		}
+	}
+	&.challengePost {
+		&:first-of-type {
+			margin-top:30px !important;
+		}
+		.authorColumn {
+			overflow:hidden;
+			.authorTitle {
+				text-transform:uppercase;
+				font-family:$font3;
+				font-weight:100;
+				text-align:center;
+				a {
+					color:#222;
+					font-size:0.5em;
+					margin-top:-4px;
+				}
+			}
+			img {
+				margin-top:40px !important;
+				@include border-radius(0);
+				height:100px;
+				width:auto;
+			}
+			&:after {
+				top:16%;
+				width:100%;
+				left:40%;
+			}
+		}
+		.blogPostWrap {
+			.timeWrap {
+				display:none;
+			}
+			.postTextWrap {
+				border-left:1px solid $gray;
+				p:first-of-type {
+					border-left:none !important;
+				}
+			}
+		}
+	}
 }
 
 
@@ -335,6 +574,7 @@ a.button.social {
 	top:-150px;
 	background-position: center;
 	background-repeat:no-repeat;
+	@include transition(all 0.2s ease-in-out);
 	&:after {
 		content: " ";
 		height:52px;
@@ -369,7 +609,7 @@ h1 {
 	a {
 		color:white;
 		font-size:3em;
-		@include opacity(0.8);
+		@include opacity(0.9);
 		@include transition (all 0.4s ease-in-out);
 		&:hover {
 			color:white;
@@ -380,8 +620,9 @@ h1 {
 
 h2 {
 	font-family:$font2;
-	color:white;
-	@include opacity(0.7);
+	color:white(0.9);
+	font-weight:100;
+	letter-spacing:2px;
 	p {
 		color:white;
 		font-size:1em;
@@ -395,6 +636,24 @@ h2 {
 	position: absolute;
 	line-height: 2em;
 	text-indent: 2em;
+}
+
+.pageTitle {
+	text-transform:uppercase;
+	font-family:$font3;
+	font-weight:100;
+	text-align:center;
+	color:#222;
+	font-size:2em;
+	background-color:white(1);
+	padding:12px 0px;
+	margin:-50px auto 30px auto;
+	width:auto;
+	max-width:300px;
+}
+
+.homePage + .row .pageTitle {
+	display:none;
 }
 
 /*header*/
@@ -436,7 +695,7 @@ h2 {
 			content:" ";
 			width:1000px;
 			height:1px;
-			background-color:white(0.6);
+			
 			display:block;
 			position:absolute;
 			top:50%;
@@ -446,13 +705,19 @@ h2 {
 			content:" ";
 			width:1000px;
 			height:1px;
-			background-color:white(0.6);
+			
 			display:block;
 			position:absolute;
 			top:50%;
 			left:80%;
-
 		}
+		&.darkLink:after {
+			background-color:$gray;
+		}
+		&.darkLink:before {
+			background-color:$gray;
+		}
+
 		a {
 			color:white;
 			@include opacity(0.8);
@@ -475,6 +740,22 @@ h2 {
 				color:$orange;
 				text-decoration:underline;
 		}
+		&.currentItem.darkLink a	{
+				@include opacity(0.9);
+				color:$orange;
+				text-decoration:underline;
+		}
+		&.darkLink a {
+			color:$gray;
+			&:hover {
+				@include opacity(1);
+				text-decoration:underline;
+			}
+			&:active {
+				@include opacity(0.6);
+				color:$orange;
+			}
+		}
 	}
 }
 
@@ -486,6 +767,10 @@ h2 {
 		font-size:2em;
 		color: $orange;
 		letter-spacing: 1px;
+		@media screen and (max-width: 768px) {
+			text-align:center;
+			text-indent:-25%;
+		}
 	}
 }
 
@@ -496,6 +781,34 @@ h2 {
 			font-size:2em;
 			color: $orange;
 			letter-spacing: 1px;
+			font-weight:100;
+		}
+	}
+}
+
+.barWrap {
+	@media screen and (max-width: 768px) {
+		margin-bottom:50px;
+		margin-top:-32px;
+	}
+	& + .ctaWrap a {
+		@media screen and (max-width: 960px) {
+			font-size:1.4em;
+		}
+		@media screen and (max-width: 768px) {
+			display:block;
+			margin:0 auto;
+			margin-bottom:30px;
+			font-size:1.5em;
+		}
+		@media screen and (max-width: 620px) {
+			font-size:1.4em;
+		}
+		@media screen and (max-width: 480px) {
+			font-size:1.3em;
+		}
+		@media screen and (max-width: 420px) {
+			font-size:1.2em;
 		}
 	}
 }
@@ -518,11 +831,71 @@ h2 {
 
 .titlesWrap {
 	text-align:center !important;
-	@media screen and (max-width: 540px) {
-		
+	@media screen and (max-width: 960px) {
+		font-size:0.9em;
+	}
+	@media screen and (max-width: 768px) {
+		font-size:0.8em;
+	}
+	@media screen and (max-width: 620px) {
+		font-size:0.7em;
 	}
 	@media screen and (max-width: 480px) {
-		
+		font-size:0.6em;
+	}
+	@media screen and (max-width: 420px) {
+		font-size:0.5em;
+	}
+}
+
+/*testimonials*/
+
+.testimonialRow {
+	color:#333;
+	margin-bottom:16px !important;
+	@include opacity(0.9);
+	div {
+		.testimonialTextWrap {
+			text-align:center;
+			p {
+				font-size:1.2em;
+				&:before {
+					content: '\201C';
+					font-size: 2em;
+					font-family: georgia, serif;
+					position:relative;
+					top:2px;
+					left:-2px;
+					margin: -2px 0 0 -2px;
+				}
+				&:after {
+					 content: '\201E';
+					 font-size: 2em;
+					 font-family: georgia, serif;
+					 line-height: 0;
+					 position: relative;
+					 top: -9px;
+					 left: 5px;
+				 }
+			}
+		}
+		.testimonialAuthorWrap {
+			text-align:center;
+			font-size:0.8em;
+			position:absolute;
+			right:0;
+			top:30%;
+			&:after {
+				content:" ";
+				display:block;
+				width:1000px;
+				background-color:$gray;
+				position:absolute;
+				height:1px;
+				left:40%;
+				top:-4px;
+			}
+		}
 	}
 }
 
@@ -548,6 +921,91 @@ footer {
 		a {
 			position:relative;
 			top:10px;
+		}
+	}
+}
+
+/*donate modal*/
+
+#myModal {
+	.donateTitle {
+		font-family: $font2;
+		font-weight:100;
+		color:$orange;
+		text-align:center;
+	}
+	div {
+		border:none !important;
+	}
+	.section-container.accordion {
+		max-width:960px;
+		margin:0 auto 30px auto;
+		section {
+			div.radioOuter {
+				@include border-radius(99999px);
+				border:1px solid $gray !important;
+				height:20px;
+				width:20px;
+				display:inline-block;
+				position:absolute;
+				top:21px;
+				left:4px;
+				&.personalRadio {
+					top:auto;
+					bottom:21px;
+				}
+				div.radioInner {
+					@include border-radius(9999px);
+					background:$gray;
+					height:4px;
+					width:4px;
+					display: none;
+					position:absolute;
+					top:7px;
+					left:7px;
+				}
+			}
+			.donateTitle {
+				background-color:none !important;
+				text-align:left;
+				padding:16px 8px;
+				text-indent:18px;
+				a {
+					@include transition(0.2s all ease-in-out);
+					color:$gray;
+					font-size:1.2em;
+					font-weight:100;
+					letter-spacing: 1px;
+					&:hover {
+						color:$orange;
+						@include opacity(0.8);
+					}
+				}
+			}
+			.content {
+				.row .ctaWrap a {
+					margin-bottom:0;
+				}
+			}
+		}
+		section.active {
+			.donateTitle {
+				a {
+					color:$orange;
+					&:hover {
+						@include opacity(1);
+					}
+				}
+			}
+			div.radioOuter {
+				&.personalRadio {
+					top:83px;
+				}
+				div.radioInner {
+					display: block;
+					background-color:$orange;
+				}
+			}
 		}
 	}
 }
